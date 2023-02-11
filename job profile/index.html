@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Job Profile </title>
+    <style>
+        h1{text-align: center;}
+    </style>
+    <style>
+      form {
+        width: 800px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #E6E4ED;
+      }
+      label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+      }
+      input[type="text"],
+      select,
+      textarea {
+        width: 100%;
+        padding: 10px;
+        margin-top: 10px;
+        font-size: 16px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+      }
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        margin-top: 20px;
+        background-color: #24014E;
+        color: white;
+        font-size: 16px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #24014E;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Job Profile</h1>
+    <form>
+      <p>
+        <label for="jobTitle">Job Title:</label>
+        <input type="text" id="jobTitle" name="jobTitle" placeholder="Add Job Title">
+      </p>
+      <p>
+        <label for="employer">Employer:</label>
+        <input type="text" id="employer" name="employer" placeholder="Enter Company Name">
+      </p>
+      <p>
+        <label for="jobType">Job Type:</label>
+        <select id="jobType" name="jobType">
+          <option value="full-time">Full-Time</option>
+          <option value="part-time">Part-Time</option>
+          <option value="contract">Contract</option>
+          <option value="internship">Internship</option>
+        </select>
+      </p>
+      <p>
+        <label for="startDate">Start Date:</label>
+        <input type="date" id="startDate" name="startDate">
+      </p>
+      <p>
+        <label for="endDate">End Date:</label>
+        <input type="date" id="endDate" name="endDate">
+      </p>
+      <p>
+        <label for="jobDescription">Job Description:</label>
+        <textarea id="jobDescription" name="jobDescription" placeholder="Describe your role and responsibilities"></textarea> </textarea>
+      </p>
+      <p>
+        <input type="submit" value="Submit" >
+      </p>
+    </form>
+  </body>
+</html>
